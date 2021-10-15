@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_margin="10dp" android:orientation="vertical"
+    tools:context=".RecipeDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/labelText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="label"
+        android:gravity="center"
+        android:textColor="#37667E"
+        android:textSize="26dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="554dp">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/noimage" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:text="Ingredients:"
+                android:textColor="#37667E"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ingredientScroll">
+                <TextView
+                    android:id="@+id/ingredientText"
+                    android:layout_width="match_parent"
+                    android:layout_height="165dp"
+                    android:textColor="#37667E"
+                    android:textSize="16dp" />
+            </ScrollView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:text="Directions:"
+                android:textColor="#37667E"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/directionScroll">
+                <TextView
+                    android:id="@+id/directionText"
+                    android:layout_width="405dp"
+                    android:layout_height="211dp"
+                    android:textColor="#37667E"
+                    android:textSize="16dp" />
+            </ScrollView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:id="@+id/sourceButton"
+            android:layout_width="238dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="#7B92AA"
+            android:text="No source"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="#DEC4D6"
+            android:drawableLeft="@drawable/ic_delete_black_24dp"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:background="#A4CCE3"
+            android:drawableLeft="@drawable/ic_edit_black_24dp"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" />" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

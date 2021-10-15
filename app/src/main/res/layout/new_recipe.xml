@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="634dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Label:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editLabel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Give a label" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingredients:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/ingredientText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/ingredientsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/editIngredients"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Give an ingredient line" />
+
+                <Button
+                    android:id="@+id/removeIngredientButton"
+                    android:layout_width="67dp"
+                    android:layout_height="wrap_content"
+                    android:background="#DEC4D6"
+                    android:drawableLeft="@drawable/ic_remove_black_24dp"
+                    android:layout_marginRight="5dp"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip" />
+
+                <Button
+                    android:id="@+id/addIngredientButton"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:background="#37667E"
+                    android:drawableLeft="@drawable/ic_add_black_24dp"
+                    android:paddingLeft="20dip"
+                    android:paddingRight="20dip" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Directions:"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/directionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <LinearLayout android:layout_width="match_parent"
+            android:id="@+id/directionsLayout"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editDirections"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:hint="Give a direction line"  />
+            <Button
+                android:id="@+id/removeDirectionButton"
+                android:layout_width="67dp"
+                android:layout_height="wrap_content"
+                android:background="#DEC4D6"
+                android:drawableLeft="@drawable/ic_remove_black_24dp"
+                android:layout_marginRight="5dp"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" />
+
+            <Button
+                android:id="@+id/addDirectionButton"
+                android:layout_width="62dp"
+                android:layout_height="wrap_content"
+                android:background="#37667E"
+                android:drawableLeft="@drawable/ic_add_black_24dp"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip" />
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Source:"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editSource"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:hint="Give a source name" />
+
+            <EditText
+                android:id="@+id/editUrl"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Give a source url" />
+
+            <Button
+                android:id="@+id/cameraButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="#37667E"
+                android:text="take a picture"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/imageView"
+                android:layout_height="300dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/noimage" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPanel"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="190dp"
+            android:layout_height="match_parent"
+            android:background="#DEC4D6"
+            android:layout_margin="5dp"
+            android:text="cancel" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="167dp"
+            android:layout_height="58dp"
+            android:layout_margin="5dp"
+            android:background="#A4CCE3"
+            android:text="save" />
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

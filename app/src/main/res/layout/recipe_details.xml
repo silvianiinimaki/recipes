@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    tools:context=".RecipeDetailsActivity">
+
+
+    <TextView
+        android:id="@+id/labelText"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="label"
+        android:gravity="center"
+        android:textColor="#37667E"
+        android:textSize="26dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="Ingredients:"
+        android:textColor="#37667E"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="529dp"
+        android:fillViewport="true">
+
+        <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ingredientText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#37667E"
+            android:textSize="16dp" />
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/buttonPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/sourceButton"
+            android:layout_width="190dp"
+            android:layout_height="62dp"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"
+            android:background="#DEC4D6"
+            android:text="source" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="173dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_margin="5dp"
+            android:background="#A4CCE3"
+            android:text="Save this recipe" />
+    </LinearLayout>
+
+
+</LinearLayout>

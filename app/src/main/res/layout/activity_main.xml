@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d5e4ed"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/searchActivityButton"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/green"
+        android:text="Search recipes"
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/createRecipeButton"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/red"
+        android:text="Create a new recipe"
+        android:textSize="30dp"
+        android:textStyle="bold"
+         />
+
+    <Button
+        android:id="@+id/myRecipesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/blue"
+        android:text="Saved recipes"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+</LinearLayout>
