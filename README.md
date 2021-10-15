@@ -9,6 +9,10 @@ I created this project in the spring of 2021 as my first whole Kotlin-app. I had
 Only regret I have is the API I used, because it didn't return enough details of the recipes and the user has to go to different websites to get more information.
 I did add a button to the recipes, so it's as easy as possible to toggle between the source website and the app.
 
+## Demo video
+
+https://www.dropbox.com/s/h43n04ae5rfemfj/InShot_20211015_110201045.mp4?dl=0
+
 ## Features
 
 - Search recipes from api
