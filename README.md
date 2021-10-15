@@ -46,3 +46,4 @@ https://www.dropbox.com/s/h43n04ae5rfemfj/InShot_20211015_110201045.mp4?dl=0
 * Get a free API-key and id from https://developer.edamam.com/edamam-recipe-api
 * Download project as zip
 * Open in android studio
+* Add your API key and id to the url in searchActivity.kt line: 111
